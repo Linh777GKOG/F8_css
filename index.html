@@ -12,15 +12,22 @@
         margin: 0;
       }
 
-      .header {
-        width: 100%;
-        height: 100vh;
-        background: url(https://i.ytimg.com/vi/KDYPXKdzT98/maxresdefault.jpg)
-          no-repeat center / contain;
+      h1 {
+        position: relative;
+        /* relative phụ thuộc vào chính vị trí đang đứng */
+        /* Lấy chính mình làm gốc tọa độ, không phụ thuộc vào đối tượng nào khác ở bên ngoài cả */
+        top: 100px;
+        left: 100px;
       }
     </style>
   </head>
   <body>
-    <div class="header"></div>
+    <h1>Position</h1>
+    <ul>
+      <li>Relative</li>
+      <li>Absolute</li>
+      <li>Fixed</li>
+      <li>Sticky</li>
+    </ul>
   </body>
 </html>
